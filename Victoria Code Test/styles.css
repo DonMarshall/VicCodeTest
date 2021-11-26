@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Montserrat:wght@500;800&display=swap');
+		body {
+			    font-family: 'Montserrat', sans-serif;
+		}
+		#container {
+			margin: 0 auto;
+			max-width:  1280px;
+			display: flex;
+			flex-wrap: wrap;
+			align-content: flex-start;
+			padding: 0px;
+		}
+		#container li {
+			width:  calc(33.33% - 40px);
+			display: flex;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			box-sizing: border-box;
+			background: #fcf9f0;
+			margin: 20px;
+			padding: 20px;
+			background: #f2f2f2;
+    		border-radius: 10px;
+    		color: #0F1B26;
+    		-webkit-filter: drop-shadow( 2px 2px 4px rgba(68,68,68,1) );
+    		filter: drop-shadow( 2px 2px 4px rgba(68,68,68,1) );
+}
+		}
+
+		#container li > img {
+			height: auto;
+		}
+		#container li > div:first-child {
+			padding-right: 20px;
+			width:  100px;
+		}
+		#container img {
+			width:  100%;
+		}
+		#container li > div:last-child {
+			width: calc(100% - 120px);
+			flex-grow: 1;
+		}
+		#container li > div:last-child p, #container li > div:last-child address {
+			 overflow-wrap: break-word;
+			 font-size: 14px;
+			 margin: 10px 0px;
+		}
+		#container li > div:last-child p:first-child{
+			text-transform: uppercase;
+   			color: #4072b8;
+    		font-weight: 800;
+    		margin: 0px;
+    		font-size: 18px;
+		}
+		address span {
+			width:  100%;
+			display: block;
+		}
+		@media screen and (max-width: 1066px) {
+			#container li > div:first-child {
+				width:  100%;
+				padding: 0px;
+			}
+  		
+  		}
+  		@media screen and (max-width: 768px) {
+			#container li {
+				width: calc(50% - 40px);
+			}
+  		
+  		}
+  		@media screen and (max-width: 500px) {
+			#container li {
+				width: calc(100% - 40px);
+			}
+			#container li > div:first-child {
+				width:  100px;
+				padding-right: 20px;
+			}
+  		
+  		}
+}
